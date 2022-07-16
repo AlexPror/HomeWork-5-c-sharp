@@ -9,25 +9,25 @@ Console.Write("Введите число элементов массива: ");
 int arrSize = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[arrSize];
 Random rnd = new Random();
-int[] Array (int[] arrSize)
+int[] Array(int[] arrSize)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rnd.Next (0,10);
+        array[i] = rnd.Next(0, 10);
         Console.Write($"{array[i]} ");
     }
     return array;
 }
 int evenNumCountSum = 0;
-int EvenNumCountSum (int arrSize)
+int EvenNumCountSum(int arrSize)
 {
-    for(int i = 0; i < arrSize; i++)
+    for (int i = 0; i < arrSize; i++)
     {
-        if (array[i] % 2 != 0)
-            evenNumCountSum +=array[i];       
+        if (i % 2 != 0)
+            evenNumCountSum += array[i];
     }
     return evenNumCountSum;
-} 
+}
 Console.Write("Исходный массив: ");
 Array(array);
 Console.Write("\n");
